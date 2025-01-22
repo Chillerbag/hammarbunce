@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // this class will be used to control the level  - i.e do the generation, listen for end and start events, call other objects, etc.
+    
 }

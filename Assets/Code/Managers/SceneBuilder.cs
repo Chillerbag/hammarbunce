@@ -2,17 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneManager : MonoBehaviour
+public static class SceneBuilder
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private static List<LevelObject> levelObjects;
+    private static List<MenuObject> menuObjects;
+
+    public static void OnMenuStart() {
+        // set position in scene of each menu object. 
+        foreach (LevelObject obj in levelObjects) {
+            obj.onLevelStart();
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public static void OnGameStart() {
+
+        // set position in scene of each object. 
+        foreach (LevelObject obj in levelObjects) {
+            obj.onLevelStart();
+        }
     }
+
+    
 }
