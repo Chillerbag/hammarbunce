@@ -15,6 +15,7 @@ public abstract class State : MonoBehaviour
 
     public abstract void stateMovement();
 
+    // at end of slam state, broadcast score level event. Score manager will subscribe. 
     public abstract void endStateAction();
 
     public abstract void toNextState();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class LevelObject: MonoBehaviour {
+public class LevelObject: MonoBehaviour, IEntity {
 
     private Vector2 startPos;
 
@@ -18,10 +18,4 @@ public class LevelObject: MonoBehaviour {
         transform.position = startPos;
 
     }
-
-
-
-
-
-
 }
