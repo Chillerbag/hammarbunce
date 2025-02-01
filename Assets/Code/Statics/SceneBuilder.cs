@@ -8,7 +8,7 @@ public static class SceneBuilder
     public static void OnMenuStart() {
         // set position in scene of each menu object. 
         foreach (LevelObject obj in levelObjects) {
-            obj.onLevelStart();
+            obj.onStart();
         }
 
     }
@@ -17,7 +17,7 @@ public static class SceneBuilder
 
         // set position in scene of each object. 
         foreach (LevelObject obj in levelObjects) {
-            obj.onLevelStart();
+            obj.onStart();
         }
     }
 
