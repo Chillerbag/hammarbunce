@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO: menu subscription events for buttons being clicked. 
+
 public static class SubscriptionHandler
 {
     private static List<MenuObject> menuSubscribers;

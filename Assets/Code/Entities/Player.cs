@@ -49,6 +49,8 @@ public class Player : LevelObject
     // function here for moving left and right, and changing state to slam
     public void controls() 
     {
+        movement = Vector2.zero;
+        
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             // move left in air 
@@ -91,7 +93,6 @@ public class Player : LevelObject
         {
             if (playerState is StatePlayerSlam)
             {
-                // TODO function to calc score here. (Angle of hitboxes)
                 _currentState.EndState(false);
                 // TODO: Slam the nail in here. (Change its sprite).
             }

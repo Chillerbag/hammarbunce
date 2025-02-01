@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO - interface for buttons. Probably useless. Might delete. 
 public class IButton : MonoBehaviour
 {
     // Start is called before the first frame update

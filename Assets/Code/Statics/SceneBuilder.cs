@@ -1,5 +1,9 @@
 using System.Collections.Generic;
 
+// this class is used to build scenes using their start positions. 
+
+
+// TODO: instantiate all the objects in these lists and populate the lists.
 public static class SceneBuilder
 {
     private static List<LevelObject> levelObjects;

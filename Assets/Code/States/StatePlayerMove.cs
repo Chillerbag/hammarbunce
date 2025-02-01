@@ -9,14 +9,16 @@ public class StatePlayerMove : State
     public override void stateAction() 
     {
         // this will need to be dynamic. change rotation speed with combo 
-        entityTransform.eulerAngles = Vector3.forward * 1;
+        
+        // TODO - will this change angle of collider too? 
+        entityTransform.Rotate(Vector3.forward, Space.Self);
     }
 
     public override bool endStateAction()
     {
         // stop rotation 
 
-        // is this actually useless? - cleanup later.
+        // TODO is this actually useless? - cleanup later.
         return true;
 
     }
